@@ -1,0 +1,15 @@
+[
+  { "src": "assets-src/models/cn/core_v2.glb", "out": "assets-src/renders/cn/core", "fit": 3, "tile": 120, "pad": 66 },
+  { "src": "assets-src/models/cn/tower_v2.glb", "out": "assets-src/renders/cn/tower", "fit": 1.8, "tile": 120, "pad": 30 },
+  { "src": "assets-src/models/cn/mine_v2.glb", "out": "assets-src/renders/cn/mine", "fit": 2, "tile": 120, "pad": 36 },
+  { "src": "assets-src/models/cn/wall_v2.glb", "out": "assets-src/renders/cn/wall", "fit": 1, "tile": 120, "pad": 9 },
+  { "src": "assets-src/models/jp/core_v2.glb", "out": "assets-src/renders/jp/core", "fit": 3, "tile": 120, "pad": 66 },
+  { "src": "assets-src/models/jp/tower_v2.glb", "out": "assets-src/renders/jp/tower", "fit": 1.8, "tile": 120, "pad": 30 },
+  { "src": "assets-src/models/jp/mine_v2.glb", "out": "assets-src/renders/jp/mine", "fit": 2, "tile": 120, "pad": 36 },
+  { "src": "assets-src/models/jp/wall_v2.glb", "out": "assets-src/renders/jp/wall", "fit": 1, "tile": 120, "pad": 9 },
+  { "src": "assets-src/models/eu/core_v2.glb", "out": "assets-src/renders/eu/core", "fit": 3, "tile": 120, "pad": 66 },
+  { "src": "assets-src/models/eu/tower_v2.glb", "out": "assets-src/renders/eu/tower", "fit": 1.8, "tile": 120, "pad": 30 },
+  { "src": "assets-src/models/eu/mine_v2.glb", "out": "assets-src/renders/eu/mine", "fit": 2, "tile": 120, "pad": 36 },
+  { "src": "assets-src/models/eu/wall_v2.glb", "out": "assets-src/renders/eu/wall", "fit": 1, "tile": 120, "pad": 9 },
+  { "src": "assets-src/models/cn/sword_troop.glb", "out": "assets-src/renders/cn/sword_troop", "fit": 0.55, "tile": 300, "facings": 8, "pad": 76, "anchor": "center" }
+]

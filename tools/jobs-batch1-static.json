@@ -1,0 +1,4 @@
+[
+  { "src": "assets-src/models/jp/bomber.glb", "out": "assets-src/renders/jp/u_bomber", "fit": 0.55, "tile": 300, "facings": 8, "pad": 76, "anchor": "center", "yaw": -90 },
+  { "src": "assets-src/models/eu/bomber.glb", "out": "assets-src/renders/eu/u_bomber", "fit": 0.55, "tile": 300, "facings": 8, "pad": 76, "anchor": "center", "yaw": -90 }
+]

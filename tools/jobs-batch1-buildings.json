@@ -1,0 +1,8 @@
+[
+  { "src": "assets-src/models/cn/barracks.glb", "out": "assets-src/renders/cn/barracks", "fit": 2.3, "tile": 120, "pad": 42 },
+  { "src": "assets-src/models/jp/barracks.glb", "out": "assets-src/renders/jp/barracks", "fit": 2.3, "tile": 120, "pad": 42 },
+  { "src": "assets-src/models/eu/barracks.glb", "out": "assets-src/renders/eu/barracks", "fit": 2.3, "tile": 120, "pad": 42 },
+  { "src": "assets-src/models/cn/aoe.glb", "out": "assets-src/renders/cn/aoe", "fit": 1.8, "tile": 120, "pad": 30 },
+  { "src": "assets-src/models/jp/aoe.glb", "out": "assets-src/renders/jp/aoe", "fit": 1.8, "tile": 120, "pad": 30 },
+  { "src": "assets-src/models/eu/aoe.glb", "out": "assets-src/renders/eu/aoe", "fit": 1.8, "tile": 120, "pad": 30 }
+]

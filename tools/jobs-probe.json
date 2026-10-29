@@ -1,0 +1,6 @@
+[
+  { "src": "assets-src/models/anim/cn_talisman/rig.glb", "out": "assets-src/renders/probe/cn_talisman", "fit": 0.55, "tile": 160, "facings": 1, "pad": 40, "anchor": "center", "frames": 24,
+    "clips": { "attack": "assets-src/models/anim/cn_talisman/attack.glb" } },
+  { "src": "assets-src/models/anim/eu_archer/rig.glb", "out": "assets-src/renders/probe/eu_archer", "fit": 0.55, "tile": 160, "facings": 1, "pad": 40, "anchor": "center", "frames": 24,
+    "clips": { "attack": "assets-src/models/anim/eu_archer/attack.glb" } }
+]

@@ -1,0 +1,16 @@
+[
+  { "src": "assets-src/models/cn/ape.glb", "out": "assets-src/renders/cn/ape", "fit": 0.55, "tile": 300, "facings": 8, "pad": 76, "anchor": "center" },
+  { "src": "assets-src/models/cn/fly.glb", "out": "assets-src/renders/cn/fly", "fit": 1.2, "tile": 300, "facings": 8, "pad": 76, "anchor": "center" },
+  { "src": "assets-src/models/cn/hero.glb", "out": "assets-src/renders/cn/hero", "fit": 0.55, "tile": 300, "facings": 8, "pad": 76, "anchor": "center" },
+  { "src": "assets-src/models/cn/talisman.glb", "out": "assets-src/renders/cn/talisman", "fit": 0.46, "tile": 300, "facings": 8, "pad": 76, "anchor": "center" },
+  { "src": "assets-src/models/eu/archer.glb", "out": "assets-src/renders/eu/archer", "fit": 0.55, "tile": 300, "facings": 8, "pad": 76, "anchor": "center" },
+  { "src": "assets-src/models/eu/golem.glb", "out": "assets-src/renders/eu/golem", "fit": 0.55, "tile": 300, "facings": 8, "pad": 76, "anchor": "center" },
+  { "src": "assets-src/models/eu/gryphon.glb", "out": "assets-src/renders/eu/gryphon", "fit": 1.1, "tile": 300, "facings": 8, "pad": 76, "anchor": "center" },
+  { "src": "assets-src/models/eu/hero.glb", "out": "assets-src/renders/eu/hero", "fit": 0.42, "tile": 300, "facings": 8, "pad": 76, "anchor": "center" },
+  { "src": "assets-src/models/eu/knight.glb", "out": "assets-src/renders/eu/knight", "fit": 0.55, "tile": 300, "facings": 8, "pad": 76, "anchor": "center" },
+  { "src": "assets-src/models/jp/charm.glb", "out": "assets-src/renders/jp/charm", "fit": 0.38, "tile": 300, "facings": 8, "pad": 76, "anchor": "center" },
+  { "src": "assets-src/models/jp/fox.glb", "out": "assets-src/renders/jp/fox", "fit": 0.55, "tile": 300, "facings": 8, "pad": 76, "anchor": "center" },
+  { "src": "assets-src/models/jp/hero.glb", "out": "assets-src/renders/jp/hero", "fit": 0.55, "tile": 300, "facings": 8, "pad": 76, "anchor": "center" },
+  { "src": "assets-src/models/jp/oni.glb", "out": "assets-src/renders/jp/oni", "fit": 0.55, "tile": 300, "facings": 8, "pad": 76, "anchor": "center" },
+  { "src": "assets-src/models/jp/tengu.glb", "out": "assets-src/renders/jp/tengu", "fit": 0.14, "tile": 300, "facings": 8, "pad": 76, "anchor": "center" }
+]
