@@ -7,7 +7,7 @@ import { armyList, muster, refund, troopById } from '../core/army';
 import { finishEncounter, NODE_INFO, runArmy, runEnergy, runLayout } from '../core/expedition';
 import { button, burst, calmCamera, hudText, ICON, MAP_BOUNDS, mapCamera, type MapCamera, splitStage, stageCamera, tileFace, RES, confetti, countTo, drawGround, drawScenery, dropShadow, ensureFx, factionOf, growHit, type Fx, H, inGrid, label, mix, outline, PAL, proj, squashFx, state, strokeRegion, strokeRing, TXT, unproj, VIEW, W, type Stage } from './common';
 import { plate, rewardIcon } from './gameUi';
-import { createBuildingView, createUnitView, destroyBuildingView, destroyUnitView, facingOf, paintOverlay, paintUnit, setFacing, unitHitHeight, type BuildingView, type UnitView } from './sprites';
+import { createBuildingView, createUnitView, destroyBuildingView, destroyUnitView, facingOf, paintOverlay, paintUnit, preloadBattleSprites, setFacing, unitHitHeight, type BuildingView, type UnitView } from './sprites';
 
 /** Last-frame snapshot of a sim entity; hits, attacks and deaths are read off the differences. */
 type Track = { hp: number; cd: number; x: number; y: number };
@@ -106,6 +106,8 @@ export class BattleScene extends Phaser.Scene {
   private cam!: MapCamera;
 
   constructor() { super('battle'); }
+
+  preload() { preloadBattleSprites(this); }
 
   init(data: { mode?: 'attack' | 'defend'; expedition?: boolean }) { this.mode = data.mode ?? 'attack'; this.expedition = !!data.expedition; }
 

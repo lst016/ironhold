@@ -47,16 +47,26 @@ export function preloadSprites(s: Phaser.Scene) {
     for (const t of f.troops) s.load.image(`por_${t.id}`, `assets/gacha/portraits/${t.id}.webp`);
     for (const k of Object.keys(BUILDING_PAD)) for (let i = 0; i < 2; i++) s.load.image(tex3d(`${f.id}_${k}`, i), `assets/3d/${f.id}_${k}_${i}.png`);
   }
-  for (const id of Object.keys(UNIT_3D)) for (let i = 0; i < 8; i++) s.load.image(tex3d(id, i), `assets/3d/${id}_${i}.png`);
-  for (const [id, a] of Object.entries(UNIT_ANIMS)) {
-    for (const [clip, c] of Object.entries(a.clips)) s.load.spritesheet(animTex(id, clip as UnitClip), `assets/anim/${id}_${clip}.webp`, { frameWidth: c.w, frameHeight: c.h });
-  }
   for (const u of ['banner', 'win', 'lose', 'skill', 'speed', 'flag', 'icon_stone', 'icon_token', 'icon_tower', 'icon_wall', 'icon_mine', 'icon_sword', 'icon_upgrade', 'icon_remove', 'icon_camp', 'icon_housing', 'close', 'tile_blue', 'tile_gold', 'tile_red', 'tile_green', 'tile_gray', 'tile_purple']) s.load.image(`ui_${u}`, `assets/ui/${u}.png`);
   // the 英灵殿 kit (scripts/prep_hall.py): its buttons are the game's text buttons, the rest dress the hero hall
   for (const u of HALL_KIT) s.load.image(`hall_${u}`, `assets/ui/hall/${u}.png`);
   s.load.image('hall_bg', 'assets/ui/hall/bg.jpg');
   for (const d of DECO_KEYS) s.load.image(`deco_${d}`, `assets/deco/${d}.png`);
   preloadMaps(s);
+}
+
+/** Combat-only sprites are loaded on first entry to battle and retained in Phaser's texture cache. */
+export function preloadBattleSprites(s: Phaser.Scene) {
+  for (const id of Object.keys(UNIT_3D)) for (let i = 0; i < 8; i++) {
+    const key = tex3d(id, i);
+    if (!s.textures.exists(key)) s.load.image(key, `assets/3d/${id}_${i}.png`);
+  }
+  for (const [id, a] of Object.entries(UNIT_ANIMS)) {
+    for (const [clip, c] of Object.entries(a.clips)) {
+      const key = animTex(id, clip as UnitClip);
+      if (!s.textures.exists(key)) s.load.spritesheet(key, `assets/anim/${id}_${clip}.webp`, { frameWidth: c.w, frameHeight: c.h });
+    }
+  }
 }
 
 export interface BuildingView {
